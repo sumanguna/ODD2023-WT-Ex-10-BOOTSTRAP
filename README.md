@@ -294,4 +294,101 @@ Add a script to handle the form validation on submit.
 # OUTPUT 10(3):
 ![Screenshot 2023-12-31 173906](https://github.com/sumanguna/ODD2023-WT-Ex-10-BOOTSTRAP/assets/146914442/853a268d-bb94-429a-b234-72fdba2942a5)
 
+# RESULT:
+This code develops a program to structure vertical form layouts which handle form validation in bootstrap.
 
+# Ex-10(4):
+# AIM:
+Create a basic email login form in Bootstrap with validation function.
+
+# DESIGN STEPS: 10(4)
+# STEP 1:
+Initialize the HTML document with the necessary Bootstrap links.
+
+# STEP 2:
+Create a container for the form and add a heading.
+
+# STEP 3:
+Inside the form, create a form group for the email input field. Add the required attribute to the input field for validation.
+
+# STEP 4:
+Add a submit button for the form.
+
+# STEP 5:
+Add a script to handle the form validation on submit.
+
+# CODE:10(4)
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Login Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2 class="mb-4">Login</h2>
+
+    <form id="loginForm">
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="inputEmail">Email address:</label>
+        <input type="email" class="form-control" id="inputEmail" name="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+
+      <!-- Password Input -->
+      <div class="form-group">
+        <label for="inputPassword">Password:</label>
+        <input type="password" class="form-control" id="inputPassword" name="password" required>
+        <div class="invalid-feedback">Please enter your password.</div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Form validation using Bootstrap classes
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+</body>
+</html>
+```
+# OUTPUT:10(4)
+![Screenshot 2023-12-31 173959](https://github.com/sumanguna/ODD2023-WT-Ex-10-BOOTSTRAP/assets/146914442/7d5869fc-f0cb-4743-b8a2-a89b0ad17193)
