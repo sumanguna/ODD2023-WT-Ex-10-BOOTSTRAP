@@ -292,4 +292,6 @@ Add a script to handle the form validation on submit.
     <button type="button" class="btn btn-success"> Submit </button>
 ```
 # OUTPUT 10(3):
+![Screenshot 2023-12-31 173906](https://github.com/sumanguna/ODD2023-WT-Ex-10-BOOTSTRAP/assets/146914442/853a268d-bb94-429a-b234-72fdba2942a5)
+
 
