@@ -208,4 +208,88 @@ Link the Bootstrap JavaScript file at the end of the body.
 </html>
 ```
 # OUTPUT 10(2):
+![Screenshot 2023-12-31 173549](https://github.com/sumanguna/ODD2023-WT-Ex-10-BOOTSTRAP/assets/146914442/236a543e-4742-4b4c-9b57-292c5ecdf7ef)
+# RESULT:
+This code creates a Responsive student registration form for ABCEngineering College built with Bootstrap.
+
+# Ex-10(c)
+# AIM:
+Develop a program to structure vertical form layouts which handle form validation in bootstrap.
+
+# DESIGN STEPS 10(3):
+# STEP 1:
+Initialize the HTML document with the necessary Bootstrap links.
+
+# STEP 2:
+Create a container for the form and add a heading.
+
+# STEP 3:
+Inside the form, create a form group for the name input field. Add the required attribute to the input field for validation.
+
+# STEP 4:
+Add a submit button for the form.
+
+# STEP 5:
+Add a script to handle the form validation on submit.
+
+# CODE 10(3):
+```
+<form>
+    <div class="form-group">
+    <div class="col-md-6">
+                <label for="valid01" class="form-label">Username</label>
+                <input type="text" class="form-control" id="valid01" required>
+               <div class="invalid-feedback">
+                     Please provide a valid Username.
+                </div>
+          </div>
+    <div class="col-md-3">
+                <label for="valid02" class="form-label">Password</label>
+                <input type="text" class="form-control" id="valid02" required>
+               <div class="invalid-feedback">
+                     Please provide a valid Password.
+                </div>
+          </div>
+    <div class="col-md-3">
+                <label for="valid03" class="form-label">Department</label>
+                <select class="form-select" id="valid04" required>
+                      <option>Choose anyone Department</option>
+                      <option>AIML</option>
+                      <option>AIDS</option>
+                      <option>IOT</option>
+                </select>
+                <div class="invalid-feedback">
+                      Please select a valid Department.
+                </div>
+          </div>
+    <div class="col-md-9">
+                <label for="valid04" class="form-label">Mobile Number</label>
+                <input type="text" class="form-control" id="valid04" required>
+    <div class="valid-feedback">
+                      Entered Details are correct.
+                </div>
+          </div>
+    <div class="col-md-9">
+                <label for="valid05" class="form-label">Designation</label>
+                <input type="text" class="form-control" id="valid05" required>
+    <div class="valid-feedback">
+                      Entered Details are correct.
+                </div>
+          </div>
+    <div class="col-md-9">
+                <label for="valid06" class="form-label">E-Mail ID</label>
+                <input type="text" class="form-control" id="valid06" required>
+    <div class="valid-feedback"> Entered Details are correct.
+                </div>
+          </div>
+    <div class="col-md-3">
+                <label for="valid07" class="form-label">Term & Conditions </label>
+                <input type="checkbox" class="form-control" id="valid07" required>
+    <div class="invalid-feedback">
+                      You must agree to terms and conditions before submitting...
+                </div>
+          </div>
+    <button type="button" class="btn btn-success"> Submit </button>
+```
+# OUTPUT 10(3):
 
