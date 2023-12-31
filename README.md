@@ -392,3 +392,5 @@ Add a script to handle the form validation on submit.
 ```
 # OUTPUT:10(4)
 ![Screenshot 2023-12-31 173959](https://github.com/sumanguna/ODD2023-WT-Ex-10-BOOTSTRAP/assets/146914442/7d5869fc-f0cb-4743-b8a2-a89b0ad17193)
+# RESULT:
+This code creates a basic email login form in Bootstrap with validation function
